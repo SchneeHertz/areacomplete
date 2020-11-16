@@ -126,3 +126,15 @@ $(document).ready(function(){
 	initURLTextarea();
 });
 ```
+
+when use in component of page, you can destroy this plugin by use destroyAreacomplete function
+
+```javascript
+<script>
+export default {
+  beforeDestroy () {
+    $(`#${this.data.id}`).destroyAreacomplete(this.data.id)
+	}
+}
+</script>
+```
