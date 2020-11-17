@@ -134,7 +134,7 @@ when use in component of page, you can destroy this plugin by use destroyAreacom
 export default {
   beforeDestroy () {
     $(`#${this.data.id}`).destroyAreacomplete(this.data.id)
-	}
+  }
 }
 </script>
 ```
